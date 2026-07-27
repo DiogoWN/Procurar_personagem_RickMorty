@@ -7,14 +7,26 @@
 </head>
 <body>
     <form action="" method="get">
-    Busca de personagem pelo número: <input type="number" name="characterId" id="characterId">
+        <h2>Buscar personagem pelo ID</h2>
+         ID do personagem: <input type="number" name="characterId" id="characterId">
+        <hr>
+
+        <h2>Informações</h2>
+        Nome:<input type="checkbox" name="name" id="name">
+        Status:<input type="checkbox" name="status" id="status">
+        Espécie:<input type="checkbox" name="species" id="species">
+        Gênero:<input type="checkbox" name="gender" id="gender">
+        Planeta de Origem:<input type="checkbox" name="origin" id="origin">
+        Episódios:<input type="checkbox" name="episode" id="episode">
+        <hr>
+
         <button id="btn-go">Procurar</button>
     </form>
     
+    <pre id="content"></pre>
     <img src="" alt="" id="img">
-    <pre id="content"></pre> 
-    <!--pre: serve para trabalhar de forma mais bonita para mostrar objetos--> 
-    
+    <!--pre: serve para trabalhar de forma mais bonita para mostrar objetos-->
+
     <script src="script.js"></script>
 </body>
 </html>
